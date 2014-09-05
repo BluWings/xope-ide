@@ -20,18 +20,63 @@
       </content-type>
    </extension>
 
+	<!-- WTP XML Search -->
+	
+	<extension point="org.eclipse.wst.sse.ui.editorConfiguration">
+		<sourceViewerConfiguration
+			class="org.eclipse.wst.xml.search.editor.XMLReferencesStructuredTextViewerConfiguration"
+			target="io.xope.ide.jst.xo.xml.contenttype.xoXMLConfigFile" />   			
+	</extension>
+	
    <extension
          point="org.eclipse.wst.xml.search.editor.xmlReferences">
       <references
             contentTypeIds="io.xope.ide.jst.xo.xml.contenttype.xoXMLConfigFile">
          <reference>
-            <from
-                  path="//provider" />
+            <from path="//ns:provider"
+            	  targetNodes="text()" />
 			<toJava />
          </reference>
       </references>
    </extension>
 
+  <extension point="org.eclipse.wst.sse.ui.sourcevalidation">
+		<validator
+			scope="partial"
+			class="org.eclipse.wst.xml.ui.internal.validation.MarkupValidator"
+			id="io.xope.ide.jst.xo.xml.validation.MarkupValidator">
+			<contentTypeIdentifier id="io.xope.ide.jst.xo.xml.contenttype.xoXMLConfigFile">
+				<partitionType id="org.eclipse.wst.xml.XML_DEFAULT">
+				</partitionType>
+			</contentTypeIdentifier>			
+		</validator>
+	</extension>
+   <extension point="org.eclipse.wst.sse.ui.sourcevalidation">
+		<validator
+			scope="partial"
+			class="org.eclipse.wst.xml.ui.internal.validation.DelegatingSourceValidatorForXML"
+			id="io.xope.ide.jst.xo.xml.validation.DelegatingSourceValidatorForXML">
+			<contentTypeIdentifier id="io.xope.ide.jst.xo.xml.contenttype.xoXMLConfigFile">
+				<partitionType id="org.eclipse.wst.xml.XML_DEFAULT">
+				</partitionType>
+			</contentTypeIdentifier>			
+		</validator>
+	</extension>	
+	   	
+   <extension point="org.eclipse.wst.sse.ui.sourcevalidation">
+		<validator
+			scope="partial"
+			class="org.eclipse.wst.xml.search.editor.validation.XMLReferencesValidator"
+			id="io.xope.ide.jst.xo.xml.validation.Validator">
+			<contentTypeIdentifier id="io.xope.ide.jst.xo.xml.contenttype.xoXMLConfigFile">
+				<partitionType id="org.eclipse.wst.xml.XML_DEFAULT">
+				</partitionType>
+			</contentTypeIdentifier>			
+		</validator>
+	</extension>
+	
+	<!-- XSD WTP Catalog --> 
+	
    <extension
          point="org.eclipse.wst.xml.core.catalogContributions">
       <catalogContribution
