@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde?>
+<!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform -->
+<target name="Xope IDE Target Platform" sequenceNumber="1409915102">
+  <locations>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.emf.feature.group" version="2.10.0.v20140519-0339"/>
+      <unit id="org.eclipse.gef.feature.group" version="3.9.100.201405261516"/>
+      <unit id="org.eclipse.sdk.feature.group" version="4.4.0.v20140606-1558"/>
+      <unit id="org.eclipse.xsd.feature.group" version="2.10.0.v20140519-0339"/>
+      <unit id="org.eclipse.xsd.edit.feature.group" version="2.8.0.v20140519-0339"/>
+      <unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="3.9.0.v20140528-1625"/>
+      <unit id="org.eclipse.ecf.core.feature.feature.group" version="1.1.0.v20140528-1625"/>
+      <unit id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version="3.6.0.v201405010300-377F8N8s73573E6H6966"/>
+      <unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.6.0.v201405070300-52FYwAkF7BH7PBI9OA7"/>
+      <unit id="org.eclipse.jst.server_core.feature.feature.group" version="3.4.100.v20140501_1027-31FJJ8s73593L5KA5FB5"/>
+      <unit id="org.eclipse.jst.web_core.feature.feature.group" version="3.6.0.v201405070300-7Q7HGm4FE9LeD_Ucz0jf-SrKpO54lk6t3877"/>
+      <unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ"/>
+      <unit id="org.eclipse.wst.common.fproj.feature.group" version="3.6.0.v201405011300-377F8N8s735555393B7B"/>
+      <unit id="org.eclipse.wst.server_core.feature.feature.group" version="3.3.400.v20140501_1027-35F8N8s735A3G6KA5GC5"/>
+      <unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.6.0.v201405062148-7E7NFfkAJz0nDTnf3z-OUDukQcaTH_d-P"/>
+      <unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.6.0.v201405062148-7O7XGA-EMjBb6nLaqlPbjbbsokeynV4Qpz-UGZwo"/>
+      <unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.6.0.v201405062148-7C7OG-8F7RZHQZIgP0NyQn"/>
+      <unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF"/>
+      <repository location="http://download.eclipse.org/releases/luna"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.wst.xml.search.core-feature.feature.group" version="1.0.0.201407020506"/>
+      <unit id="org.eclipse.wst.xml.search.web-feature.feature.group" version="1.0.0.201407020506"/>
+      <repository location="http://oss.opensagres.fr/eclipse-wtp-xml-search/1.0.0-SNAPSHOT"/>
+    </location>
+  </locations>
+</target>

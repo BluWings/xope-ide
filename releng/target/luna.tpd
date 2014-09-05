@@ -1,0 +1,31 @@
+target "Xope IDE Target Platform" with source, requirements
+
+location "http://download.eclipse.org/releases/luna" {
+
+	org.eclipse.emf.feature.group
+	org.eclipse.gef.feature.group
+	org.eclipse.sdk.feature.group
+	org.eclipse.xsd.feature.group
+	org.eclipse.xsd.edit.feature.group
+	org.eclipse.ecf.filetransfer.feature.feature.group
+	org.eclipse.ecf.core.feature.feature.group
+	org.eclipse.jst.common.fproj.enablement.jdt.feature.group
+	org.eclipse.jst.enterprise_core.feature.feature.group
+	org.eclipse.jst.server_core.feature.feature.group
+	org.eclipse.jst.web_core.feature.feature.group
+	org.eclipse.jst.web_ui.feature.feature.group
+	org.eclipse.wst.common.fproj.feature.group
+	org.eclipse.wst.server_core.feature.feature.group
+	org.eclipse.wst.web_core.feature.feature.group
+	org.eclipse.wst.web_ui.feature.feature.group
+	org.eclipse.wst.xml_core.feature.feature.group
+	org.eclipse.wst.xml_ui.feature.feature.group
+
+}
+
+location "http://oss.opensagres.fr/eclipse-wtp-xml-search/1.0.0-SNAPSHOT" {
+
+	org.eclipse.wst.xml.search.core-feature.feature.group
+	org.eclipse.wst.xml.search.web-feature.feature.group
+
+}
