@@ -7,7 +7,9 @@ Bundle-Activator: io.xope.ide.xml.search.ui.Activator
 Bundle-Vendor: %providerName
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
- org.eclipse.wst.xml.core
+ org.eclipse.wst.xml.core,
+ org.eclipse.wst.xml.search.editor,
+ org.eclipse.wst.xml.ui
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Localization: plugin
 Bundle-ActivationPolicy: lazy
