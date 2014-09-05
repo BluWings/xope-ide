@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+         <content-type
+            base-type="org.eclipse.core.runtime.xml"
+            file-extensions="xml"
+            id="io.xope.ide.jst.xo.xml.contenttype.xoXMLConfigFile"
+            name="%configFileContentTypeName"
+            priority="high">
+         <describer
+               class="org.eclipse.core.runtime.content.XMLRootElementContentDescriber2">
+               <parameter
+                     name="element"
+                     value="{http://buschmais.com/xo/schema/v1.0}xo">
+               </parameter>
+         </describer>
+      </content-type>
+   </extension>
+
+   <extension
+         point="org.eclipse.wst.xml.search.editor.xmlReferences">
+      <references
+            contentTypeIds="io.xope.ide.jst.xo.xml.contenttype.xoXMLConfigFile">
+         <reference>
+            <from
+                  path="//provider" />
+			<toJava />
+         </reference>
+      </references>
+   </extension>
+
+   <extension
+         point="org.eclipse.wst.xml.core.catalogContributions">
+      <catalogContribution
+            id="default">
+         <uri
+               name="http://buschmais.com/xo/schema/v1.0"
+               uri="dtdsAndSchemas/xo-1.0.xsd">
+         </uri>
+      </catalogContribution>
+   </extension>
+
+</plugin>

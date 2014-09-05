@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: io.xope.ide.xml.search.ui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: io.xope.ide.xml.search.ui.Activator
+Bundle-Vendor: %providerName
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.wst.xml.core
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Localization: plugin
+Bundle-ActivationPolicy: lazy
